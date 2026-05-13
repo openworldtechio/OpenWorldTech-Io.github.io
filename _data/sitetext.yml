@@ -32,6 +32,8 @@ en: &DEFAULT_EN
             alt: Assistant Fitness Vitamin Tracking
           - src: assets/img/portfolio/afit_ipad_track_your_daily.jpg
             alt: Assistant Fitness iPad View
+          - src: assets/img/portfolio/afit_ipad_track_your_daily_vitamin.jpg
+            alt: Assistant Fitness iPad Vitamin Tracking
       - title: "Online Gaming and Virtual Worlds"
         desc: "Develop and deploy dynamic online games, social virtual spaces, digital twins, and collaborative metaverse experiences using industry-standard technology and tools."
         icon: fas fa-laptop
