@@ -41,3 +41,8 @@ markdown: kramdown
 
 plugins:
   - jekyll-remote-theme
+
+exclude:
+  - scripts/
+  - vendor/
+  - start-stop.sh

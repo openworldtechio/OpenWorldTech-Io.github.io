@@ -1,0 +1,37 @@
+Configuration file: /Users/mpursley/dev/OpenWorldTech-Io.github.io/_config.yml
+            Source: /Users/mpursley/dev/OpenWorldTech-Io.github.io
+       Destination: /Users/mpursley/dev/OpenWorldTech-Io.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+      Remote Theme: Using theme openworldgame-io/openworld-jekyll-theme
+       Jekyll Feed: Generating feed for posts
+bundler: failed to load command: jekyll (/Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/bin/jekyll)
+Errno::EEXIST: File exists @ syserr_fail2_in - /Users/mpursley/dev/OpenWorldTech-Io.github.io/_site/start-stop.sh
+  /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:1365:in `symlink'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:1365:in `copy'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:478:in `block in copy_entry'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:1485:in `wrap_traverse'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:475:in `copy_entry'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/static_file.rb:197:in `copy_file'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/static_file.rb:107:in `write'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/site.rb:231:in `block in write'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/site.rb:364:in `block in each_site_file'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/site.rb:364:in `each'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/site.rb:364:in `each_site_file'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/site.rb:230:in `write'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/site.rb:82:in `process'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/command.rb:28:in `process_site'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/commands/build.rb:65:in `build'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/commands/build.rb:36:in `process'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/command.rb:91:in `each'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/lib/jekyll/commands/serve.rb:86:in `block (2 levels) in init_with_program'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/gems/jekyll-4.3.4/exe/jekyll:15:in `<top (required)>'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/bin/jekyll:23:in `load'
+  /Users/mpursley/dev/OpenWorldTech-Io.github.io/vendor/bundle/ruby/2.6.0/bin/jekyll:23:in `<top (required)>'

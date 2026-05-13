@@ -1,0 +1,97 @@
+<!-- Services -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+  {% assign services_data = site.data.sitetext[site.locale].services %}
+{% else %}
+  {% assign services_data = site.data.sitetext.services %}
+{% endif %}
+
+<section class="page-section" id="{{ services_data.section | default: 'services' }}">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ services_data.title | default: "Services" }}</h2>
+        {% if services_data.text %}
+        <h3 class="section-subheading text-muted">{{ services_data.text }}</h3>
+        {% endif %}
+      </div>
+    </div>
+  
+    <div class="row text-center">
+    {% for service in services_data.list %}
+      {% if forloop.first %}
+        <!-- Featured Service on its own line -->
+        <div class="col-lg-12 mb-5 pb-5 border-bottom">
+          <div class="row align-items-center text-left">
+            <div class="col-md-5 text-center text-md-left">
+              <span class="fa-stack fa-4x mb-4">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="{{ service.icon | default: 'fas fa-shopping-cart' }} fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="service-heading">{{ service.title | markdownify | strip_html }}</h4>
+              {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
+            </div>
+            <div class="col-md-7 mt-4 mt-md-0">
+              {% if service.images %}
+              <div class="row justify-content-center">
+                {% for img in service.images %}
+                <div class="col-4 px-2">
+                  <a href="#serviceModal{{ forloop.index }}" class="portfolio-link" data-toggle="modal">
+                    <img class="img-fluid rounded shadow-sm" src="{{ img.src }}" alt="{{ img.alt }}" style="transition: transform 0.2s; cursor: pointer; width: 100%; border: 1px solid #eee;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <!-- Standard Service -->
+        <div class="col-md-4 mb-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="{{ service.icon | default: 'fas fa-shopping-cart' }} fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">{{ service.title | markdownify | strip_html }}</h4>
+          {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Modals for Featured Service Images -->
+{% for service in services_data.list %}
+  {% if forloop.first and service.images %}
+    {% for img in service.images %}
+    <div class="portfolio-modal modal fade" id="serviceModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 600px;">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body text-center">
+                  <img class="img-fluid d-block mx-auto rounded shadow" src="{{ img.src }}" alt="{{ img.alt }}">
+                  <p class="mt-3 text-muted">{{ img.alt }}</p>
+                  <button class="btn btn-primary mt-3" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+<!-- End Services -->

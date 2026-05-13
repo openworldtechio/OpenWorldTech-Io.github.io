@@ -24,11 +24,14 @@ en: &DEFAULT_EN
       - title: "Full-Stack AI-Enabled App Development"
         desc: >
           End-to-end development of intelligent, cross-platform applications. Check out our showcase project, <a href="https://assistant-fitness.com/" target="_blank">Assistant Fitness</a> (available on <a href="https://play.google.com/store/apps/details?id=com.assistantfitness.app&hl=en_US" target="_blank">Google Play</a> and the <a href="https://apps.apple.com/us/app/assistant-fitness-com/id6764689575" target="_blank">App Store</a>), demonstrating our expertise in seamless AI integrations, dynamic user interfaces, and robust backend architecture.
-          <br><br>
-          <img src="assets/img/portfolio/afit_iphone_live_chat.jpg" style="width: 31%; display: inline-block; border-radius: 8px; margin: 1%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Assistant Fitness Live Chat" />
-          <img src="assets/img/portfolio/afit_iphone_track_your_daily_vitamin.jpg" style="width: 31%; display: inline-block; border-radius: 8px; margin: 1%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Assistant Fitness Vitamin Tracking" />
-          <img src="assets/img/portfolio/afit_ipad_track_your_daily.jpg" style="width: 31%; display: inline-block; border-radius: 8px; margin: 1%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Assistant Fitness iPad View" />
         icon: fas fa-mobile-alt
+        images:
+          - src: assets/img/portfolio/afit_iphone_live_chat.jpg
+            alt: Assistant Fitness Live Chat
+          - src: assets/img/portfolio/afit_iphone_track_your_daily_vitamin.jpg
+            alt: Assistant Fitness Vitamin Tracking
+          - src: assets/img/portfolio/afit_ipad_track_your_daily.jpg
+            alt: Assistant Fitness iPad View
       - title: "Online Gaming and Virtual Worlds"
         desc: "Develop and deploy dynamic online games, social virtual spaces, digital twins, and collaborative metaverse experiences using industry-standard technology and tools."
         icon: fas fa-laptop
