@@ -34,10 +34,10 @@ en: &DEFAULT_EN
             class: "col-6 px-2 mb-3"
           - src: assets/img/portfolio/afit_ipad_track_your_daily.jpg
             alt: Assistant Fitness iPad View
-            class: "col-12 px-2 mb-3"
+            class: "col-10 col-md-8 px-2 mb-3"
           - src: assets/img/portfolio/afit_ipad_track_your_daily_vitamin.jpg
             alt: Assistant Fitness iPad Vitamin Tracking
-            class: "col-12 px-2 mb-3"
+            class: "col-10 col-md-8 px-2 mb-3"
       - title: "Online Gaming and Virtual Worlds"
         desc: "Develop and deploy dynamic online games, social virtual spaces, digital twins, and collaborative metaverse experiences using industry-standard technology and tools."
         icon: fas fa-laptop
