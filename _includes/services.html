@@ -35,7 +35,7 @@
               {% if service.images %}
               <div class="row justify-content-center">
                 {% for img in service.images %}
-                <div class="col-6 col-md-3 px-2">
+                <div class="{{ img.class | default: 'col-6 col-md-3 px-2 mb-3' }}">
                   <a href="#serviceModal{{ forloop.index }}" class="portfolio-link" data-toggle="modal">
                     <img class="img-fluid rounded shadow-sm" src="{{ img.src }}" alt="{{ img.alt }}" style="transition: transform 0.2s; cursor: pointer; width: 100%; border: 1px solid #eee;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
                   </a>
